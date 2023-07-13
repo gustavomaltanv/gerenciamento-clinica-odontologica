@@ -1,1 +1,32 @@
 # gerenciamento-clinica-odontologica
+
+Projeto da Programação Orientada a Objetos desenvolvido na matéria de Linguagem de Programação 1
+
+Passos indiacos no projeto:
+
+Clínica Odontológica – Parte 1
+1.	Crie uma classe de nome Dentista para representar o responsável pelo procedimento odontológico a que o paciente será submetido. Crie também uma classe de nome Paciente e outra de nome Procedimento para representar o procedimento a ser realizado no paciente. 2.	No momento da instanciação de objetos das classes Dentista, Paciente e Procedimento, todos os seus respectivos atributos devem ser inicializados obrigatoriamente. 3.	Codificar um método que seja capaz de fornecer uma descrição de uma determinada instância das classes do sistema.
+
+   
+Clínica Odontológica – Parte 2 
+1.	Crie uma classe de nome Consulta. Essa classe deve ser responsável por registrar alguns dados da consulta como o dentista responsável, paciente e procedimento realizado. 2.	No momento da instanciação de objetos da classe Consulta todos os seus atributos devem ser inicializados obrigatoriamente. 3.	Disponibilize um método na classe Consulta responsável por calcular o valor de uma consulta. Por enquanto considere o preço da consulta igual ao valor do procedimento realizado.  4.	Crie uma classe de nome Agenda com apenas um atributo: uma lista de consultas.  5.	Disponibilize um método na classe Agenda para calcular o faturamento total da clínica.  6.	Acrescente uma funcionalidade ao sistema que seja capaz de disponibilizar a quantidade de consultas agendadas.  7.	Adicione um atributo na classe Dentista capaz de armazenar um código identificador. O conteúdo desse atributo deve único, sequencial iniciando em 1 e gerado automaticamente pelo sistema. 8.	Adicione um atributo na classe Paciente capaz de armazenar um código identificador. O conteúdo desse atributo deve único, sequencial iniciando em 1 e gerado automaticamente pelo sistema. 9.	Adicione um atributo na classe Procedimento capaz de armazenar um código identificador. O conteúdo desse atributo deve único, sequencial iniciando em 1 e gerado automaticamente pelo sistema.
+
+
+Clínica Odontológica – Parte 3 
+1.	Apesar de nosso sistema já ter melhorado bastante ainda podemos avançar um pouco mais. Usaremos ArrayList em substituição ao vetor usado na classe Agenda. Agora teremos um ArrayList de objetos da classe Consulta para representar a lista de consultas presentes na Agenda.Essa alteração proporcionará muitas facilidades no manuseio da agenda como percurso, inserção, remoção e ordenação. Se continuássemos usando vetor teríamos muito trabalho com a implementação destas operações. Use um mecanismo para garantir que a lista de consultas seja composta exclusivamente de objetos da classe Consulta. 2.	Codificar métodos na classe Agenda que permitam adicionar, remover e verificar a existência de determinado evento na lista de consultas. 3.	Encapsule todas as classes do sistema. 4.	Implemente um mecanismo que evite a quebra de encapsulamento nas classes do sistema.
+
+
+Clínica Odontológica – Parte 4 
+1.	Você notou a existência de duplicidade de código nas classes Paciente e Dentista. Implemente uma solução para esse problema. 2.	Até o presente momento a Clínica trabalha apenas com um tipo de dentista. A partir de agora outras formas de trabalho devem ser incorporadas ao sistema. Agora a Clínica manterá relações trabalhistas diferentes com seus dentistas e podem ser incorporadas novas relações no futuro. Por enquanto considere apenas 2 tipos de dentista: o assalariado e o comissionado. O dentista assalariado possui um salário fixo por mês. Já o dentista comissionado recebe uma comissão sobre o valor total dos procedimentos realizados por ele. Elabore um mecanismo para obrigar o cálculo do salário para todos os novos tipos de funcionários que possam surgir no futuro. 3.	Crie uma classe de nome IdentificadorDeDentista que seja capaz de identificar os diferentes tipos de dentista. Por exemplo: para um determinado Dentista a funcionalidade proposta deve identificá-lo como “Dentista assalariado” ou “Dentista comissionado”, dentre outros tipos de dentista que podem ser incorporados ao sistema no futuro. Essa classe deve disponibilizar suas funcionalidades sem a necessidade de instanciar objetos.
+
+
+Clínica Odontológica – Parte 5
+1.	O sistema deverá prever uma forma de tratamento específica para os pacientes, dentistas, dentre outros que possam ser incorporados ao sistema no futuro. Por enquanto considere essa funcionalidade apenas para os pacientes e dentistas. A forma de tratamento deve levar em conta o sexo da pessoa.  2.	Vamos incorporar algumas restrições ao sistema. Elabore uma solução que permita a ocorrência de uma exceção para o caso de se registrar percentuais acima de 50% para a comissão de um dentista. 3.	Disponibilizar os seguintes relatórios: a)	A relação das consultas em ordem crescente por nome do paciente. b)	A relação das consultas em ordem decrescente por nome do dentista. Nas duas listagens acima apresentar para cada consulta, o valor devido ao dentista e à clínica. Apresente os valores totais ao final das listagens.
+
+
+Clínica Odontológica – Parte 6
+1.	Elabore uma estrutura para classificar os pacientes em categorias. Essa estrutura deve associar cada nome de paciente a uma categoria (Categoria A para pacientes com total de procedimentos acima de R$30.000,00; Categoria B para pacientes com total de procedimentos acima de R$ 10.000,00 e abaixo de R$30.000,00; Categoria C para pacientes com total de compras abaixo de R$ 10.000,00).Crie um mecanismo capaz de atualizar essa estrutura sempre que desejado.
+   
+ 
+Clínica Odontológica – Parte 7 
+1.	Existe um atributo, no sistema, que armazena uma lista de consultas, certo? Trata-se de um ArrayList configurado para aceitar apenas objetos da classe Consulta. Você codificou diversos métodos (listar, adicionar, remover, etc) para manipular essa lista de consultas. Está lembrado? Agora imagine se precisássemos gerenciar outras listas em nosso sistema, além da lista de consultas, como lista de dentistas, de procedimentos, dentre outras. Teríamos que codificar os mesmos métodos da lista de consulta para essas outras listas: método para listar, adicionar, remover, dentre outros. Haverá duplicidade de código e todos os problemas relacionados a essa estratégia.Proponha e implemente uma solução capaz de generalizar o tratamento a qualquer tipo de lista, seja ela de consultas ou outra qualquer. 
